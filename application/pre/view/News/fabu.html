@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="__STATIC__/css/bootstrap.min.css">
+	<title>后台资源发布</title>
+</head>
+<body class="container">
+			<form action=" tianjia">
+	            <label for='exampleInputname'>添加剧名</label>
+	            <input type="text" class="form-control"  name="jm" placeholder="汉字或字母" required onInput="value=value.replace(/[\d]/g,'') "onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[\d]/g,''))" maxlength=10 style="width: 175px;">
+	          </div>
+	          <div class="form-group">
+	            <label for="exampleInputtext" name="zy">视频资源</label>
+	            <input type="file" class="form-control" name="zy">
+	          </div>
+	          <div class="checkbox">
+	            <label>
+	              <div class="alert alert-success">发布.......</div>
+	            </label>
+	          </div>
+	          <button type="submit" class="btn btn-default" style=" border-radius: 17px; width:75px;height: 45px;margin-left: 23px;background-color:#CCFFFF; font-size: 20px;font-weight: 900;order-color:#F8F8FF ; ">提交</button>
+	          <button type="reset" class="btn btn-default"style=" border-radius: 17px; width:75px;height: 45px;margin-left: 23px;background-color:#CCFFFF; font-size: 20px;font-weight: 900;border-color:#F8F8FF ; ">重置</button>
+	        </form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>

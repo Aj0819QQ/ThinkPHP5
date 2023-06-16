@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录界面</title>
+	<link rel="icon" type="image/x-icon" href="__STATIC__/img/zhanghao.png">
+    <style type="text/css">
+	body {
+	    background: pink;
+	    min-height: 100vh;
+	     /* 背景图不平铺 */
+	     /* 背景图垂直、水平均居中 */
+	   background:url('__STATIC__/img/x.jpg')  no-repeat center center; 
+	    /* 让背景图基于容器大小伸缩 */
+	   background-size:cover;
+	   /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+	   background-attachment:fixed; /*此条属性必须设置否则可能无效*/
+	   /* 设置背景颜色，背景图加载过程中会显示背景色 */
+	   background-color:#CCCCCC;
+	}
+	
+    	.shadow{
+    /* width: 330px; */
+    width: 415px;
+    height: 63px;
+    box-shadow:5px 7px 50px #7FFFD4;
+    background-color:#F8F8FF;
+    border-radius: 30px ;
+    opacity: 0.6;
+    /* margin: auto; */
+
+}
+.shadow h1{
+    text-align: center;
+    font-family:华文行楷;
+    line-height: 68px;
+    font-size: 50px;
+    color: #696969;
+}
+
+.bar{
+  position: relative;
+  width: 415px;
+  height: 450px;
+  background: #333333;
+  opacity: 0.7;
+  margin:0 auto;
+  /* margin-right: 367px; */
+  border-radius: 17px;
+  top: 35px;
+}
+.bar h1{
+    font-family: 华文行楷;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+.bar input{
+    border-radius: 17px;
+    border-color:#F5F5F5;
+    height: 45px;
+    width: 371px;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    border: 1px solid;
+    padding-left: 8px;
+    box-sizing: border-box;  
+   /* outline: medium; */
+}
+.buttom-login{
+   pointer-events: auto;
+}
+
+.buttom-login button{
+    border-radius: 17px;
+    width:373px;
+    height: 45px;
+    margin-left: 23px;  
+    background-color:#CCFFFF;
+   /* border: none; */
+    font-size: 20px;
+    font-weight: 900;
+    border-color:#F8F8FF ;  
+  /*  outline: medium; */
+}
+/* .logon{
+    position: absolute;
+    margin: auto;
+} 
+.logon .img0{
+    width: 123px;
+    height: 97px;
+    opacity: 1.5;
+    margin-top: 75px;
+    margin-left: 125px;
+} */
+.bar .img1,
+.bar .img2{
+    position: absolute;
+    top: 117px;
+    left: 32px;
+    opacity: 0.6;
+}
+
+/*.bar .img0{
+    width: 95px;
+    height: 70px;
+    top: 12px;
+    left: 12px;
+}*/
+
+.bar .img1{
+    width: 36px;
+    height: 38px;
+    top: 117px;
+}
+.bar .img2{
+    width: 50px;
+    height: 45px;
+    top: 216px;
+    left: 24px;
+}
+    </style>
+    <script>
+	 
+	 
+     </script>
+
+</head>
+<body>
+ <div class="Big-adm" id="demo">
+  <div class="shadow"><h1>鲸&nbsp;&nbsp;鱼&nbsp;&nbsp;电&nbsp;&nbsp;影</h1></div>
+  <!-- <div class="logon"><img  class="img0" src="__STATIC__/img/logoed.png" alt=""></div> -->
+  <!-- 登录界面 -->
+      <div class="bar">
+        <form action="admin"  method="POST" id='form1' >             
+          <h1>人&nbsp;员&nbsp;登&nbsp;录</h1></br></br>
+          <input type="text" name="name" placeholder="ID" id="bg" required='required' maxlength="10"></br></br></br></br>
+          <input type="password" name="password" placeholder="password" maxlength="16" id="ng" required='required' ></br></br></br></br>
+          <div class="buttom-login" id="buttom-login"> 
+            <button type="submit"><span>登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</span></button>
+          </div>
+        </form>
+      </div>

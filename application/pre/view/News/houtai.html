@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="__STATIC__/css/bootstrap.min.css">
+	<title>后台资源发布</title>
+</head>
+
+
+
+
+<body class="container" style="background-color: #FFFFF0;">
+<div class="content" style="height: 225px;margin-top: 15px;">
+<table   class="table table-hover table-bordered">
+<form action="query" method="post" accept-charset="utf-8">
+	<div class="col-md-4">
+	       <p class="bg-info">
+	    </p><div class="col-md-12 input-group">
+	      <span class="input-group-btn">
+	        <button class="btn" type="button">关键字</button>
+	      </span>
+	      <input type="text" name="chaxun" class="form-control" placeholder="关键字">
+	    </div><!-- /input-group -->
+	      <p></p>
+	    </div>
+	 <!-- 2 搜索按钮 --> 
+		 <div class="col-md-2">
+		  <p class="bg-info">
+		  </p><div><input type="submit" name="cx" class="btn btn-danger" style="width: 120px;" value="查询" ></div>
+		  <p></p>
+		 </div>
+		  <div class="col-md-2">
+		  <p class="bg-info">
+		  </p><div><a  class="btn btn-primary" href="add"> <li class="glyphicon glyphicon-plus"></li>添加热点</a></div>
+		  <p></p>
+		 </div>
+	 </form>
+    <thead>
+        <tr class="bg-primary">
+            <th >序号</th>
+            <th>文章名称</th>
+            <th>作者</th>
+            <th>来源</th>
+            <th>类型</th>
+            <th>资源</th>
+			<th>视频排行</th>
+			<th>操作</th>
+        </tr>
+    </thead>
+	
+    <tbody>
+    {volist name="jg" id="onedy"}
+        <tr>
+            <td>{$onedy->Id}</td>
+            <td>{$onedy->title} </td>
+            <td>{$onedy->author} </td>
+            <td>{$onedy->source} </td>
+            <td>{$onedy->type} </td>
+			<td>{$onedy->ziyuan} </td>
+			<td>{$onedy->paihang}</td>
+            <td>
+			<a class="btn btn-primary btn-sm" href="edit?id={$onedy->Id}">
+            <li class="glyphicon glyphicon-pencil"></li> 编辑
+			</a>
+            <a class="btn btn-danger btn-sm" href="delete?id={$onedy->Id}"> <li class="glyphicon glyph            icon-trash"></li> 删除
+			</a>
+            </td>
+        </tr>
+    {/volist}
+    </tbody>
+</table>
+</div>		         
+<div id="d2">
+	{$jg->render()}
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+  <title>edit</title>
+  <link rel="stylesheet" href="__STATIC__/kindeditor/themes/default/default.css" />
+  <link rel="stylesheet" href="__STATIC__/kindeditor/plugins/code/prettify.css" />
+  <script charset="utf-8" src="__STATIC__/kindeditor/kindeditor.js"></script>
+  <script charset="utf-8" src="__STATIC__/kindeditor/lang/zh_CN.js"></script>
+  <script charset="utf-8" src="__STATIC__/kindeditor/plugins/code/prettify.js"></script>
+  <script>
+    KindEditor.ready(function(K) {
+      var editor1 = K.create('textarea[name="content"]', {
+        cssPath : '__STATIC__/kindeditor/plugins/code/prettify.css',
+        uploadJson : '__STATIC__/kindeditor/php/upload_json.php',
+        fileManagerJson : '__STATIC__/kindeditor/php/file_manager_json.php',
+        allowFileManager : true,
+        afterCreate : function() {
+          var self = this;
+          K.ctrl(document, 13, function() {
+            self.sync();
+            K('form[name=example]')[0].submit();
+          });
+          K.ctrl(self.edit.doc, 13, function() {
+            self.sync();
+            K('form[name=example]')[0].submit();
+          });
+        }
+      });
+      prettyPrint();
+    });
+  </script>
+
+<style type="text/css" >
+
+#d0{
+   margin-top:40px;
+   width:1200px;
+   height:600px;
+   padding-top:30px;
+   padding-left:30px;
+   margin-right:auto;
+   margin-left:auto;}
+
+</style>
+
+</head>
+<body>
+<div id="d0">
+ <form   action="update" method="post">
+
+        <p><input type="text" name="xh"    value="{$xw->Id}"  hidden />
+        <p>标题：<input  style="width:400px"  type="text" name="title"   value="{$xw->title}" />
+        <p>作者：<input type="text" name="author"   value="{$xw->author}"/>
+        <p>来源：<input type="text" name="source"   value="{$xw->source}" />
+        <p>类型：<input type="text" name="type"     value="{$xw->type}" />
+		<p>资源：<input type="text" name="ziyuan"  value="{$xw->ziyuan}" />
+		<p>排行：<input type="text" name="paihang"   value="{$xw->paihang}"  />
+        <p>内容：<textarea name="content" required> {$xw->content}</textarea>
+
+        <!-- <p>图片：<input type="file" name="picture" /> -->
+
+        <p><input type="submit" name="tijiao" value="提交" />
+           <input type="reset" name="reset" value="重置" />
+ </form>
+</div>
+</body>
+</html>

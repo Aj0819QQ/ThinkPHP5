@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/x-icon" href="__STATIC__/img/eat.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 引入css -->
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/bootstrap.min.css">
+    <!-- 引入jq -->
+    <script type="text/javascript" src="__STATIC__/jq/jquery-3.4.1.js"></script>
+    <!-- 引入js -->
+    <script type="text/javascript" src="__STATIC__/js/bootstrap.min.js"></script>
+	<title>个人爱好</title>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            word-wrap: break-word;
+            font-family: '微软雅黑', sans-serif;
+        }
+ 
+        body {
+            background: pink;
+            min-height: 200vh;
+             /* 背景图不平铺 */
+             /* 背景图垂直、水平均居中 */
+           background:url('__STATIC__/img/food.0.jpg')  no-repeat center center; 
+            /* 让背景图基于容器大小伸缩 */
+           background-size:cover;
+           /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+           background-attachment:fixed; /*此条属性必须设置否则可能无效*/
+           /* 设置背景颜色，背景图加载过程中会显示背景色 */
+           background-color:#CCCCCC;
+        }
+ 
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+           /* display: flex;*/
+            align-items: center;
+            justify-content: space-between;
+            transition: 0.6s;
+            padding: 40px 100px;
+            z-index: 2;
+        }
+ 
+        header.sticky {
+            padding: 5px 100px;
+            background: #fff;
+        }
+ 
+        header .logo {
+            position: relative;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0;
+
+        }
+ 
+        header ul {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        header ul li {
+            position: relative;
+            list-style: none;
+        }
+ 
+        header ul li a {
+            position: relative;
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 2px;
+            font-weight: 500px;
+            transition: 0.5s;
+        }
+ 
+ 
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url(o1.jpg);
+            background-size: cover;
+        }
+ 
+        header.sticky .logo,
+        header.sticky ul li a {
+            color: #000;
+        }
+		div.img {
+		    border: 1px solid #ccc;
+		}
+		
+		div.img:hover {
+		    border: 1px solid #777;
+		}
+		
+		div.img img {
+		    width: 100%;
+		    height: auto;
+		}
+		
+		div.desc {
+		    padding: 15px;
+		    text-align: center;
+		}
+		
+		* {
+		    box-sizing: border-box;
+		}
+		
+		.responsive {
+		    padding: 0 6px;
+		    float: left;
+		    width: 24.99999%;
+		}
+		
+		@media only screen and (max-width: 700px){
+		    .responsive {
+		        width: 49.99999%;
+		        margin: 6px 0;
+		    }
+		}
+		
+		@media only screen and (max-width: 500px){
+		    .responsive {
+		        width: 100%;
+		    }
+		}
+		
+		.clearfix:after {
+		    content: "";
+		    display: table;
+		    clear: both;
+		}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+        	As
+        </a>
+        <ul>
+            <li><a href="#" style="color: #800000;font-size: 17px;">about us</a></li>
+            <li><a href="introduce"style="color: greenyellow;font-size: 17px;"  target="_blank">个人介绍</a></li>
+            <li><a href="want" style="color: yellow;font-size: 17px;" target="_blank">想做的事情</a></li>
+            <li><a href="person"style="color: #7FFFD4;font-size: 17px;"  target="_blank">生活经历</a></li>
+            <li><a href="#contact us" style="color: #FF7F50;font-size: 17px;" >联系</a></li>
+        </ul>
+    </header>
+<!-- 最大的框 -->
+<div class="container-fluid" > 
+<!-- content -->
+  <div id="content" style="margin-top: 245px;">
+  <div class="full-width intro">
+    <div class="full-height">
+      <div class="fixed">
+       <figure class="background-image1 parallax"></figure>
+      </div>
+      <div class="full-height-wrapper white-text">
+        <div class="parent">
+          <div class="child">
+            <section>
+              <div class="container">
+                <div class="animatedblock delay2 animatedUp">
+                  <div class="col-lg-8 col-lg-offset-3 col-md-8 col-md-offset-2 extra-padding-top">
+                    <div class="banner-textblock">
+                      <h1 class="header" style="color: greenyellow;">Positive emotion trumps</br> negative emotion</br> 
+                       every time</h1>
+                      <!-- Indicates a successful or positive action -->
+                          <a href="#section1" class="btn btn-primary btn-lg " role="button" style=" background-color: transparent; color: #1B6D85;">Do it</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="overlay"></div>
+        <div id="bonappetit" class="custom-caption"></div>
+      </div>
+    </div>
+  </div>
+
+  <hr id="section1" style="width: 0px;">
+
+  <!-- 表情包 -->
+  <hr  style="width: 0px;">
+  <div id="" style="height: 60px;"></div>
+
+<!-- 介绍部分 -->
+<div class="container" style="height: 900px;background-color: #FFFAFA;border-bottom-right-radius: 10em 3em;border-bottom-left-radius: 10em 3em;">
+	<section class="first">
+	  <div class="container clearfix">
+	    <div id="section2" class="ancor"></div>
+	    <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+	      <div class="row">
+	        <div class="col-md-6 col-sm-6 extra-padding-right extra-padding-top">
+	          <h1>Food<span class="watercolor watercolor28"></br>Different foods reflect different local conditions </span>and customs. Food knows </br> no borders</h1></br>
+	          <p style="font-family: 楷体; font-size: 17px;">•1、蜀人贵芹芽脍,杂鸠肉为之。</br>
+•2、每个城市都有不一样的街景,不一样的美食,不过,没有你的身影,似乎都一样。</br>
+•3、日啖荔枝三百颗,不辞长做岭南人。</br>
+•4、美食当前,总能有所思,或馋性千娇,食前观察、吃中思想、品后体味。</br>
+•5、此物只应天上有,人间哪得几回闻。</br> </p>
+	          <p style="font-size: 17px;">• 1. Shu People's precious celery sprouts and miscellaneous turtle dove meat.</br>
+
+• 2. Every city has different street views and different food. However, without you, it seems to be the same.</br>
+
+• 3. Eat 300 litchi a day and never quit being a Lingnan person.</br>
+
+• 4. At present, food is always thoughtful or greedy. Observe before eating, think during eating and taste after eating.</br>
+
+• 5. This thing should only exist in the sky. How many times can you smell it on earth.</br></p>
+  <a href="#" title="" class="button"><i class="fa fa-map-signs"></i> ->Come back</a> </div>
+	        <div class="clearfix col-md-6 col-sm-6 containing-image-wrapper">
+	          <div class="full-height-wrapper">
+	            <figure class="images background-image2"></figure>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  
+	  <!-- 完美的配图 -->
+	  <div class="peitu" style="float: right; margin-top: -500px;">
+		  <img src="__STATIC__/img/food-4.jpg" alt="" style="width: 466px;height: 404px;">
+	  </div>
+   </div>
+   
+    <hr  style="width: 0px;">
+	
+ <!-- content -->
+ <div class="" style="height: 600px;background-color: lightyellow;border-top-right-radius: 10em 3em;border-top-left-radius: 10em 3em;">
+	 <div class="container clearfix">
+	   <div id="section3" class="ancor"></div>
+	   <div class="col-md-10 col-md-offset-1">
+	     <div class="centered">
+		<img src="__STATIC__/img/watercolor28.png" alt=""  style="width: 75px;height: 60px;float: right;">
+    <h2 style="text-align: center;">I like chocolate products<span class="watercolor watercolor44"> best </span>！ </h2>
+	     </div>
+		 
+		 </br>
+		 
+	 <!-- 卡片图片 -->
+	 <div class="responsive">
+	   <div class="img">
+	    <a href="#">
+	       <img src="__STATIC__/img/food-2.jpg" alt="Forest" width="800" height="600">
+	     </a>
+	     <div class="desc">See this drooling</div>
+	   </div>
+	 </div>
+	 
+	 <div class="responsive">
+	   <div class="img">
+	   <a href="#">
+	       <img src="__STATIC__/img/food-3.jpg" alt="Northern Lights" width="800" height="600">
+	     </a>
+	     <div class="desc">See this drooling</div>
+	   </div>
+	 </div>
+	 
+	 <div class="responsive">
+	   <div class="img">
+	     <a href="#">
+	       <img src="__STATIC__/img/food-4.jpg" alt="auidbiuabdia d" width="800" height="600" >
+	     </a>
+	     <div class="desc">See this drooling</div>
+	   </div>
+	 </div>
+	 
+	 <div class="responsive">
+	   <div class="img">
+	     <a href="#">
+	       <img src="__STATIC__/img/food-6.jpg" alt="auidbiuabdia d" width="800" height="600" >
+	     </a>
+	     <div class="desc">See this drooling</div>
+	   </div>
+	 </div>
+	 
+	 <div class="responsive">
+	   <div class="img">
+	     <a href="#">
+	       <img src="__STATIC__/img/food-8.jpg" alt="auidbiuabdia d" width="800" height="600" >
+	     </a>
+	     <div class="desc">See this drooling</div>
+	   </div>
+	 </div>
+	 
+	 <div class="responsive">
+	   <div class="img">
+	     <a href="#">
+	       <img src="__STATIC__/img/food-11.jpg" alt="auidbiuabdia d" width="800" height="600" >
+	     </a>
+	     <div class="desc">See this drooling</div>
+	   </div>
+	 </div>
+	 
+	 <div class="responsive">
+	   <div class="img">
+	     <a href="#">
+	       <img src="__STATIC__/img/food-12.jpg" alt="auidbiuabdia d" width="800" height="600" >
+	     </a>
+	     <div class="desc">See this drooling</div>
+	   </div>
+	 </div>
+	 
+	 <div class="responsive">
+	   <div class="img">
+	     <a href="#">
+	       <img src="__STATIC__/img/food-13.jpg" alt="auidbiuabdia d" width="800" height="600" >
+	     </a>
+	     <div class="desc">See this drooling</div>
+	   </div>
+	 </div>
+	 
+	
+
+	 <!-- 待写入 -->
+	 
+		 
+		 
+	 
+	 
+ </div>
+ 
+ 
+ 
+ 
+ 
+
+
+    	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <section class="banner"></section>
+    <script>
+        window.addEventListener('scroll', () => {
+            let header = document.querySelector('header')
+            // 重要属性
+            header.classList.toggle('sticky', window.scrollY > 0)
+        })
+    </script>
+</body>
+</html>

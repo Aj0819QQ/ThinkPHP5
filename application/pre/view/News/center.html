@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>个人中心</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	 <link rel="icon" href="__STATIC__/img/watercolor62.png" type="image/x-icon" />
+   <link rel="stylesheet" type="text/css" href="__STATIC__/css/bootstrap.min.css">
+   <script type="text/javascript" src="__STATIC__/jq/jquery-3.4.1.js"></script>
+   <!-- 引入js -->
+   <script type="text/javascript" src="__STATIC__/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!--  -->
+<div class="container-fluid">
+	<nav class="navbar ">
+	    <div class="navbar-header">
+	            <a href="#" class="navbar-brand"><strong>个人</strong>.中心</a>
+	            <button class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <!--<span class="icon-bar"></span>-->
+	            </button>
+	        </div>
+	    </nav>
+	</div>
+	
+<!-- 分页 -->
+<nav aria-label="...">
+  <ul class="pager">
+    <li class="previous "><a href="index2"><span aria-hidden="true">&larr;</span> 电影页</a></li>
+    <li class="next"><a href="#">下一页 <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="tabbable" id="tabs-774993">
+					<ul class="nav nav-tabs" >
+						<li class="active">
+							 <a href="#panel-44484" data-toggle="tab">首页</a>
+						</li>
+						<li>
+							 <a href="#panel-738738" data-toggle="tab">观看记录</a>
+						</li>
+						<li>
+							 <a href="#panel-162537" data-toggle="tab">收藏影片</a>
+						</li>
+					</ul>				
+
+<!--  -->
+<div class="tab-content">
+<div class="tab-pane active" id="panel-44484">
+  <div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+			                上传图片
+			</div>
+		<div class="panel-body">
+	    <form method="post" action="upload" enctype="multipart/form-data"role="form">
+			    <div class="form-group col-md-6">
+			            <input type="file" name="file" class="form-control">
+			     </div>
+			        <div class="form-group col-md-2">
+			             <button type="submit" class="btn btn-default">上传</button>
+			        </div>
+	    </form>
+		
+<!-- 查看所有图片 -->
+<div class="container-fluid">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="panel-group" id="panel-177431">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						 <a class="panel-title" data-toggle="collapse" data-parent="#panel-177431" href="#panel-element-846303">查看所有图片</a>
+					</div>
+					<div id="panel-element-846303" class="panel-collapse in">
+						<div class="panel-body">
+							<!-- 图片循环 -->
+							{volist name="picture" id="oneday"}
+							<a href="#"><img src="../../../../public/protent/{$oneday->getData('pic_file')}" style="height: 100px;width: 100px;"></a>
+							{/volist}
+							<!-- 分页 -->
+							<div id="pagination">
+							{$picture->render()}
+						    </div>
+					    </div>
+			        </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		
+		
+			        </div>
+			        </div>
+			    </div>
+			</div>
+
+<!--  -->
+<div class="content" style="width: 100%;height: 550px;background-color: #0000FF;">
+	
+	dada
+	
+	
+	
+	
+</div>
+			
+</div>
+		
+						
+<!--  -->
+<div class="tab-pane" id="panel-738738">
+222222
+</div>
+				
+				
+<!--  -->
+<div class="tab-pane" id="panel-162537">
+333333
+</div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

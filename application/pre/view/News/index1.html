@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鲸鱼电影</title>
+    <link rel="icon" href="__STATIC__/img/jingyu.png" type="image/x-icon" />
+	<!-- 引入css -->
+	<link rel="stylesheet" type="text/css" href="__STATIC__/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__STATIC__/assets/animate.css">
+	<link rel="stylesheet" href="__STATIC__/assets/reset.css">
+	<link rel="stylesheet" href="__STATIC__/css/film.css">
+	<!-- 引入背景图css -->
+	<link rel="stylesheet" type="text/css" href="__STATIC__/b-gcss/style.css">
+	<!-- 引入jq -->
+	<script type="text/javascript" src="__STATIC__/jq/jquery-3.4.1.js"></script>
+	<!-- 引入js -->
+	<script type="text/javascript" src="__STATIC__/js/bootstrap.min.js"></script>
+<style>
+	 body{
+  font:12px/180% Arial, Helvetica, sans-serif, "新宋体";
+}
+	
+  /*.hengxian{
+    width: 80%;
+		margin: 0 auto;
+		border: 0;
+		height: 10px;
+		background-image: linear-gradient(to right, rgba(46, 218, 224, 0), rgba(95, 230, 235, 0.75), rgba(46, 120, 150, 0));
+  }*/
+  .header{
+    height: 360px;
+    line-height: 36px;
+    border:1px solid white;
+    text-align: center;
+   
+  }
+  .line{
+    display: inline-block;
+    width: 70px;
+    border-top: 1px solid black;
+    vertical-align: 5px;
+
+  }
+  .di {
+				
+				height: 235px;
+				border: 0px solid;
+				margin-top: 6px;
+				margin-left:auto;
+        /* padding: 20px; */
+        /* width: 847px; */
+			}
+
+			.di_1 {
+				width: 200px;
+				height: 285px;
+				border: 1px solid;
+				float: left;
+        margin-left: 40px;
+				transition: all 1s ease;
+				-webkit-transition: all 1s ease;
+				-moz-transition: all 1s ease;
+				-ms-transition: all 1s ease;
+				-o-transition: all 1s ease;
+			}
+
+			.di_1:hover {
+				transform: scale(10);
+				-webkit-transform: scale(.5);
+				-moz-transform: scale(.5);
+				-ms-transform: scale(.5);
+				-o-transform: scale(.5);
+
+			}
+
+			.di_2 {
+				width: 200px;
+				height: 285px;
+				border: 1px solid;
+				float: left;
+				margin-left: 15px;
+				transition: all 1s ease;
+				-webkit-transition: all 1s ease;
+				-moz-transition: all 1s ease;
+				-ms-transition: all 1s ease;
+				-o-transition: all 1s ease;
+			}
+
+			.di_2:hover {
+				transform: scale(10);
+				-webkit-transform: scale(.5);
+				-moz-transform: scale(.5);
+				-ms-transform: scale(.5);
+				-o-transform: scale(.5);
+
+			}
+
+			.jin {
+				font-size: 30px;
+				color: black;
+
+			}
+
+			.di_1p {
+				font-size: 15px;
+				margin-top: 15px;
+				color: #000000;
+
+			}
+
+			.di_2_tu {
+				margin-top: -1px;
+        width: 197px;
+        height:245px;
+			}
+      .img-content img{
+        float: left;
+        margin: 30px;
+        margin-left: auto;
+        margin-top: -270px;
+      }
+     
+      .a_mouse{
+         color:black;
+         height: 35px;
+         font-size: 40px;
+         font-family: 'Courier New', Courier, monospace;
+         width: 190px;
+         cursor: pointer;
+         outline: none;
+      }
+           
+	
+      .center{
+      	margin-top: -470px;
+      	width: 730px; 
+      	height: 450px;
+      	float: right;
+      }
+
+      .thumbnail{
+      	overflow: hidden;
+      }
+      .thumbnail img{
+      	 width: 100%;
+         transition: all 0.5s;
+      }
+      .thumbnail img:hover{
+        transform: scale(1.3);
+       }
+       .out-compare{
+       	height: 450px;
+       }
+
+       .wyzg li a{
+		font-size: 20px;
+		line-height: 64px;
+		text-decoration: none;
+	}
+	.wyzg{
+		list-style: none;
+	}
+	 .wyzg li a:link{
+        color: black;/* 未访问链接*/
+      }
+      .wyzg li a:visited{
+        color: black;/* 已访问链接 */
+      }
+      .wyzg li a:hover{
+        color: blue; /* 鼠标移动到链接上 */
+      }
+      .wyzg li a:active{
+       color: black;  /* 鼠标点击时 */
+      }
+      .wyzg{
+      	float: right;
+      	/*margin-top: -522px;*/
+      }
+
+      .bottom{
+      	height: 173px; 
+      }
+
+
+      .shop-out{
+        height: 375px;
+     /*   background-color: #cccccc;*/
+      }
+
+      .gth{
+        width: 350px; 
+        height: 375px;
+        
+      }
+      .auto-p{
+      margin: auto;
+      margin-top: -191px;
+      width:200px;
+      height:100px;
+    /*  background: #666;*/
+      transition:width 2s;
+      -webkit-transition:width 2s; /* Safari */
+      }
+      .auto-p:hover{
+      width:500px;
+      }
+      .col-end{
+        margin-top: -233px;
+        float: right;
+		
+      }
+	/*  #rcorners6 {
+	      border-radius: 15px 50px;
+	      background: #8AC007;
+	      padding: 20px; 
+	      width: 145px;
+	      height: 150px; 
+		  } */
+		  
+		  ul.pagination {
+		      display: inline-block;
+		      padding: 0;
+		      margin: 0;
+			  
+		  }
+		  
+		  ul.pagination li {
+			  display: inline;
+			  
+			  }
+		  
+		  ul.pagination li  {
+		      color: black;
+		      float: left;
+		      padding: 8px 0px;
+		      text-decoration: none;
+		      transition: background-color .3s;
+			  
+		  }
+		  
+		  ul.pagination li.active {
+		      color: white;
+			  
+		  }
+		  
+		  ul.pagination li :hover:not(.active) 
+		  {
+			  background-color: #ddd;
+			  background-color: #ffcc99;
+		  }
+		  
+</style>
+</head>
+<body>
+<!-- 背景图 -->
+<div class="container-fluid" style="padding: 0px;">
+    <div class="home">
+    <!---->
+    <div class="banner">
+      <!---->
+      <div class="mask"></div>
+      <div class="bg">
+        <div  class="bg1" style="background-image:url(__STATIC__/img/88.avif);">
+        </div>
+        <div  class="bg2" style="background-image:url(__STATIC__/img/99.avif);">
+        </div>
+      </div>
+      <!---->
+      <div class="box">
+        <div class="install">
+          <h1>Welcome to</h1>
+          <p>登录后观看噢~</p>
+          <div class="info">
+          <a href="#"data-toggle="modal" data-target="#myModal" class="btn" style="color: white;">用户登录</a>
+          <a href="#"data-toggle="modal" data-target="#myModal2" class="btn" style="color: white;">新人注册</a>
+          <a href="#"data-toggle="modal" data-target="#myModal3" class="btn" style="color: white;">商务合作</a>
+          <a href="administer" class="btn" style="color: white;" target="_blank" >admin登录</a>
+          </div>
+          <button class="btn-home">
+            <span><a href="#first" style="text-decoration: none;color: white;">开始我的电影</a>
+            </span>
+          </button>
+          </br>
+          </br>
+<!-- 前言 -->
+<div class="row clearfix">
+      <div class="col-md-12 column">
+        <blockquote style="border: none;">
+          <p style="font-family: 楷体; font-size: 20px;">
+            既然选择了远方，便只顾风雨兼程
+          </p> <small style="color: white;text-align: center;"><cite>M-J</cite></small>
+        </blockquote>
+      </div>
+    </div>
+</div>
+        </div>
+      </div>
+      <!---->
+    </div>
+    <!---->
+</div>
+
+<!-- 登录模态框的使用 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">  
+      <div class="modal-header" >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">登录</h4>
+      </div>
+      <div class="modal-body">
+        <form action="login"  method="post" id="form1" >
+			<!-- 账号 -->
+          <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon">
+					<li class="glyphicon glyphicon-user"></li>
+				</span>
+				<input type="text" class="form-control" id="exampleInputEmail1" name="username" placeholder="由数字组成" onInput="value=value.replace(/[^\d]/g,'')"  maxlength="11" required>
+			</div>
+          </div>
+		  <!-- 密码 -->
+          <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon">
+					<li class="glyphicon glyphicon-eye-close"></li>
+				</span>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="由数字组成"  onInput="value=value.replace(/[^\d]/g,'')" maxlength="11" required>
+			</div>
+          </div>
+          <button type="submit" class="btn btn-default" style="outline: none;">提交</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" style="outline: none;">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 注册模态框的使用 -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">注册</h4>
+      </div>
+      <div class="modal-body">
+        <form action="register" method="post" id="form2">
+          <div class="form-group">
+            <!-- 注册时的账号 -->
+			<div class="input-group">
+				<span class="input-group-addon">
+					<li class="glyphicon glyphicon-user"></li>
+				</span>
+				<input type="text" class="form-control" id="exampleInputEmail1" name="registername" placeholder="由数字组成" onInput="value=value.replace(/[^\d]/g,'')"  maxlength="11" required>
+			</div>
+          </div>
+          <div class="form-group">
+            <!-- 注册时的密码 -->
+			<div class="input-group">
+				<span class="input-group-addon">
+					<li class="glyphicon glyphicon-eye-close"></li>
+				</span>
+			<input type="password" class="form-control" id="exampleInputPassword1" name="registerpassword" placeholder="由数字组成"  onInput="value=value.replace(/[^\d]/g,'')" maxlength="11" required>
+			</div>
+          </div>
+          <div class="form-group">
+			<!-- 再次输入password -->
+			<div class="input-group">
+				<span class="input-group-addon">
+					<li class="glyphicon glyphicon-eye-close"></li>
+				</span>
+			<input type="password" class="form-control" id="exampleInputPassword1" name="registerpassword2" placeholder="由数字组成"  onInput="value=value.replace(/[^\d]/g,'')" maxlength="11" required>
+			</div>
+          </div>
+          
+          <button type="submit" class="btn btn-default" style="outline: none;">提交</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"style="outline: none;">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 合作模态框的使用 -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <form action="" method="post" id="form3">
+          <div class="form-group">
+            <label for="exampleInputPassword1">姓名</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="汉字或字母" required onInput="value=value.replace(/[\d]/g,'') "onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[\d]/g,''))" maxlength=4 name="Numbers">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">联系方式</label>
+			<div class="input-group">
+						<span class="input-group-addon">@</span>
+						<input type="email" class="form-control" placeholder="qq邮箱" required>
+			</div>
+					
+            <!-- <input type="email" class="form-control" id="exampleInputEmail1" placeholder="qq邮箱" required  > -->
+			
+			<label for="exampleInputPassword1" class="glyphicon glyphicon-phone-alt"></label>
+			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="iphone" required  >
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFile">合作文件</label>
+            <input type="file" id="exampleInputFile">
+          </div>
+          <div class="checkbox">
+            <label>
+              <div class="alert alert-success">信息仅用于合作，不会用于任何商业途径</div>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">提交</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"style="outline: none;">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 背景铺垫 -->
+<div class="container-fluid" style="background-color: #000000;">
+	</br>
+<!-- 一行 -->
+<div class="container" id="first">
+       <div class="row">
+        <div class="col-xs-6 col-md-3">
+         <a href="#" class="thumbnail" style="background-color: black;" >
+          <img src="__STATIC__/img/qiyibo.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+           <p style="font-size: 20px;text-align: center;">
+             在线
+           </p>
+         </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail" style="background-color: black;" >
+           <img src="__STATIC__/img/rr.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+            <p style="font-size: 20px;text-align: center;">
+              在线
+            </p>
+          </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail" style="background-color: black;" >
+             <img src="__STATIC__/img/ee.jpg" alt="..." style="width: 328.708px;height: 364.794px;" >
+            <p style="font-size: 20px;text-align: center;">
+              在线
+            </p>
+          </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail" style="background-color: black;" >
+           <img src="__STATIC__/img/oldspider1.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+            <p style="font-size: 20px;text-align: center;">
+              在线
+            </p>
+          </a>
+        </div>
+		<!--  -->
+		<div class="col-xs-6 col-md-3">
+		  <a href="#" class="thumbnail" style="background-color: black;" >
+		   <img src="__STATIC__/img/tt.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+		    <p style="font-size: 20px;text-align: center;">
+		      在线
+		    </p>
+		  </a>
+		</div>
+		<div class="col-xs-6 col-md-3">
+		  <a href="#" class="thumbnail" style="background-color: black;" >
+		   <img src="__STATIC__/img/yy.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+		    <p style="font-size: 20px;text-align: center;">
+		      在线
+		    </p>
+		  </a>
+		</div>
+		<div class="col-xs-6 col-md-3">
+		  <a href="#" class="thumbnail" style="background-color: black;" >
+		   <img src="__STATIC__/img/uu.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+		    <p style="font-size: 20px;text-align: center;">
+		      在线
+		    </p>
+		  </a>
+		</div>
+		<div class="col-xs-6 col-md-3">
+		  <a href="#" class="thumbnail" style="background-color: black;" >
+		   <img src="__STATIC__/img/qq.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+		    <p style="font-size: 20px;text-align: center;">
+		      在线
+		    </p>
+		  </a>
+		</div>
+		<div class="col-xs-6 col-md-3">
+		  <a href="#" class="thumbnail" style="background-color: black;" >
+		   <img src="__STATIC__/img/hulk.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+		    <p style="font-size: 20px;text-align: center;">
+		      在线
+		    </p>
+		  </a>
+		</div>
+		<div class="col-xs-6 col-md-3">
+		  <a href="#" class="thumbnail" style="background-color: black;" >
+		   <img src="__STATIC__/img/hulk2.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+		    <p style="font-size: 20px;text-align: center;">
+		      在线
+		    </p>
+		  </a>
+		</div>
+		<div class="col-xs-6 col-md-3">
+		  <a href="#" class="thumbnail" style="background-color: black;" >
+		   <img src="__STATIC__/img/oldspider3.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+		    <p style="font-size: 20px;text-align: center;">
+		      在线
+		    </p>
+		  </a>
+		</div>
+		<div class="col-xs-6 col-md-3">
+		  <a href="#" class="thumbnail" style="background-color: black;" >
+		   <img src="__STATIC__/img/q2.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+		    <p style="font-size: 20px;text-align: center;">
+		      在线
+		    </p>
+		  </a>
+		</div>
+      </div>
+</div>
+</br>
+</br>
+<!-- 二行 -->
+<!-- <div class="container-fluid" style="background-color: #000000;" > -->
+<div class="container"> 
+   </br>
+    <div class="container" style="text-align: center;" > 
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="font-size: 20px;">
+       热播大片
+      </a>
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample" style="font-size: 20px;">
+        院线大片
+       </a>
+       <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample" style="font-size: 20px;">
+       经典大片
+       </a>
+       <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample" style="font-size: 20px;">
+       nice大片
+       </a>
+      <div class="collapse" id="collapseExample" >
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail" style="background-color: black;" >
+             <img src="__STATIC__/img/99.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+              <p style="font-size: 20px;text-align: center;">
+                在线
+              </p>
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail" style="background-color: black;" >
+            <img src="__STATIC__/img/uu.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+              <p style="font-size: 20px;text-align: center;">
+                在线
+              </p>
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail" style="background-color: black;" >
+              <img src="__STATIC__/img/00.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+              <p style="font-size: 20px;text-align: center;">
+                在线
+              </p>
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail" style="background-color: black;" >
+             <img src="__STATIC__/img/tt.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+              <p style="font-size: 20px;text-align: center;">
+                在线
+              </p>
+            </a>
+          </div>
+        </div>
+  
+        </div>
+      </div>
+      <!-- 居中对齐-->
+      <div class="container">
+      <div class="collapse" id="collapseExample1" >
+        
+            <div class="row">
+              <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="background-color: black;" >
+               <img src="__STATIC__/img/spider2.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+                  <p style="font-size: 20px;text-align: center;">
+                    在线
+                  </p>
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="background-color: black;" >
+                 <img src="__STATIC__/img/r1.jpeg" alt="..."style="width: 328.708px;height: 364.794px;">
+                  <p style="font-size: 20px;text-align: center;">
+                    在线
+                  </p>
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="background-color: black;" >
+              <img src="__STATIC__/img/r.jpg" alt="..."style="width: 328.708px;height: 364.794px;">
+                  <p style="font-size: 20px;text-align: center;">
+                    在线
+                  </p>
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="background-color: black;" >
+                   <img src="__STATIC__/img/s.jpg" alt="..."style="width: 328.708px;height: 364.794px;">
+                  <p style="font-size: 20px;text-align: center;">
+                    在线
+                  </p>
+                </a>
+              </div>
+            </div>          
+          </div>
+        </div>
+       <!-- 居中对齐-->
+       <div class="container">
+        <div class="collapse" id="collapseExample2" >
+         
+            <div class="row">
+              <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="background-color: black;" >
+                <img src="__STATIC__/img/11.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+                  <p style="font-size: 20px;text-align: center;">
+                    在线
+                  </p>
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="background-color: black;" >
+                 <img src="__STATIC__/img/22.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+                  <p style="font-size: 20px;text-align: center;">
+                    在线
+                  </p>
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="background-color: black;" >
+                  <img src="__STATIC__/img/33.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+                  <p style="font-size: 20px;text-align: center;">
+                    在线
+                  </p>
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="background-color: black;" >
+                 <img src="__STATIC__/img/44.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+                  <p style="font-size: 20px;text-align: center;">
+                    在线
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+        </div>
+       <!-- 居中对齐-->
+       <div class="container">
+        <div class="collapse" id="collapseExample3" >
+          
+            <div class="row">
+              <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="background-color: black;" >
+                 <img src="__STATIC__/img/55.jpg" alt="..."style="width: 328.708px;height: 364.794px;">
+                  <p style="font-size: 20px;text-align: center;">
+                    在线
+                  </p>
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail"style="background-color: black;">
+                 <img src="__STATIC__/img/012.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+                  <p style="font-size: 20px;text-align: center;">
+                    在线
+                  </p>
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="background-color: black;" >
+               <img src="__STATIC__/img/013.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+                  <p style="font-size: 20px;text-align: center;">
+                    在线
+                  </p>
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="background-color: black;" >
+                 <img src="__STATIC__/img/q6.jpg" alt="..." style="width: 328.708px;height: 364.794px;">
+                  <p style="font-size: 20px;text-align: center;">
+                    在线
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+        </div>  
+  </div> 
+  </div>
+
+<!-- 短视频推荐 -->
+<!-- 背景铺垫 -->
+<div class="container-fluid" style="background-color: #000000;">
+
+<div class="box" style="margin-top:-120px;">
+        <div id="con" class="con">
+            <ul id="one" class="animated zoomIn">
+                <li>
+                    <img src="__STATIC__/img/ironman1.jpg" alt="ironman">
+                    <span>钢铁侠</span>
+                </li>
+                <li>
+                    <img src="__STATIC__/img/spider1.jpg" alt='spiderman'>
+                    <span>蜘蛛侠</span>
+                </li>
+                <li>
+                    <img src="__STATIC__/img/thor1.jpg" alt='Thor'>
+                    <span>雷神</span>
+                </li>
+                <li>
+                    <img src="__STATIC__/img/avengers1.jpg" alt='avengers'>
+                    <span>复仇者联盟</span>
+                </li>
+            </ul>
+            <ul id="two" class="animated zoomIn">
+                <li>
+                    <img src="__STATIC__/img/captain1.jpg" alt="captain">
+                    <span>美国队长</span>
+                </li>
+                <li>
+                    <img src="__STATIC__/img/galaxy1.jpg" alt="galaxy">
+                    <span>银河拯救队</span>
+                </li>
+                <li>
+                    <img src="__STATIC__/img/deadpool.jpg" alt="deadpool">
+                    <span>死侍</span>
+                </li>
+                <li>
+                    <img src="__STATIC__/img/ant1.jpg" alt="antman">
+                    <span>蚁人</span>
+                </li>
+            </ul>
+            
+
+            <!-- 弹窗 -->
+            <ul id="ironman" class="pop animated zoomIn">
+                <li>
+					<a href="#">
+                    <img src="__STATIC__/img/ironman1.jpg" alt="钢铁侠1">
+                    <span>钢铁侠</span>
+					</a>
+                </li>
+                <li>
+					<a href="#">
+					<img src="__STATIC__/img/ironman2.jpg" alt="钢铁侠2">
+                    <span>钢铁侠2</span>
+					</a>
+                    
+                </li>
+                <li>
+					<a href="#">
+						<img src="__STATIC__/img/ironman3.jpg" alt="钢铁侠3">
+						<span>钢铁侠3</span>
+					</a>
+                   
+                </li>
+            </ul>
+            <ul id="spiderman" class="pop animated zoomIn ">
+                <li >
+					<a href="#">
+						<img src="__STATIC__/img/spider1.jpg" alt="蜘蛛侠:英雄归来">
+						<span>
+						    蜘蛛侠1
+						</span>
+					</a>
+                   
+                </li>
+                <li >
+					<a href="#"><img src="__STATIC__/img/spider2.jpg" alt="蜘蛛侠:英雄远征">
+                    <span>蜘蛛侠2</span></a>
+                    
+                </li>
+                <li >
+					<a href="#"></a>
+                    <img src="__STATIC__/img/superspider1.jpg" alt="超凡蜘蛛侠">
+                    <span>超凡蜘蛛侠</span> </li>
+                <li >
+					<a href="#"><img src="__STATIC__/img/superspider2.jpg" alt="超凡蜘蛛侠2">
+                    <span>超凡蜘蛛侠2</span> </a> </li>
+                    
+                <li >
+					<a href="#"><img src="__STATIC__/img/oldspider1.jpg" alt="蜘蛛侠">
+                    <span>蜘蛛侠</span> </a> </li>
+                    
+                <li >
+					<a href="#"><img src="__STATIC__/img/oldspider2.jpg" alt="蜘蛛侠2">
+                    <span>蜘蛛侠2</span> </a> </li>
+                    
+                <li >
+					<a href="#"><img src="__STATIC__/img/oldspider3.jpg" alt="蜘蛛侠3">
+                    <span>蜘蛛侠3</span> </a> </li>
+                    
+            </ul>
+            <ul id="Thor" class="pop animated zoomIn">
+                <li>
+					<a href="#"><img src="__STATIC__/img/thor1.jpg" alt="雷神">
+                    <span>雷神</span></a>
+                    
+                </li>
+                <li>
+					<a href="#"><img src="__STATIC__/img/thor2.jpg" alt="雷神2">
+                    <span>雷神2</span></a>
+                    
+                </li>
+                <li>
+					<a href="#"><img src="__STATIC__/img/thor3.jpg" alt="雷神3">
+                    <span>雷神3</span></a>
+                    
+                </li>
+            </ul>
+            <ul id="avengers" class="pop animated zoomIn">
+				<li>
+				<a href="#"><img src="__STATIC__/img/avengers1.jpg" alt="复联1"><span>复联1</span></a> </li>
+				<li>
+                <a href="#"><img src="__STATIC__/img/avengers2.jpg" alt="复联1"><span>复联2</span></a> </li>
+				<li>
+                <a href="#"><img src="__STATIC__/img/avengers3.jpg" alt="复联1"><span>复联3</span></a> </li>
+				<li>
+				<a href="#"><img src="__STATIC__/img/avengers4.jpg" alt="复联1"><span>复联4</span></a></li>
+                
+            </ul>
+            <ul id="captain" class="pop animated zoomIn">
+				<li>
+				<a href="#"> <img src="__STATIC__/img/captain1.jpg" alt="美队"> <span>美国队长1</span> </a> </li>
+                <li>
+				<a href="#"> <img src="__STATIC__/img/captain2.jpg" alt="美队"> <span>美国队长2</span> </a> </li>
+                <li>
+				<a href="#"> <img src="__STATIC__/img/captain3.jpg" alt="美队"> <span>美国队长3</span> </a> </li>
+                
+            </ul>
+            <ul id="galaxy" class="pop animated zoomIn">
+				<li>
+				<a href="#">  <img src="__STATIC__/img/galaxy1.jpg" alt="银河拯救队"> <span>银河拯救队</span> </a> </li>
+               <li>
+				<a href="#"> <img src="__STATIC__/img/galaxy2.jpg" alt="银河拯救队2"> <span>银河拯救队2</span> </a> </li>
+                
+            </ul>
+            <ul id="deadpool" class="pop animated zoomIn">
+				<li>
+				<a href="#"> <img src="__STATIC__/img/deadpool.jpg" alt="死侍"> <span>死侍</span> </a> </li>
+                <li>
+				<a href="#">  <img src="__STATIC__/img/deadpool2.jpg" alt="死侍2"> <span>死侍2</span> </a> </li>
+               
+            </ul>
+            <ul id="antman" class="pop animated zoomIn">
+				<li>
+				<a href="#"> <img src="__STATIC__/img/ant1.jpg" alt="蚁人"> <span>蚁人</span> </li>
+                <li>
+				<a href="#"> <img src="__STATIC__/img/ant2.jpg" alt="蚁人2"> <span>蚁人2</span></a> </li>
+                
+            </ul>
+        </div>
+
+    </div>
+	
+
+<!--  -->
+<div class="container" style="margin-top:-150px;">
+	<div class="row clearfix">
+		<div class="col-md-12 column" >
+			<div class="jumbotron well" style="background-color: #CC9999;">
+				<h1>
+					你好, 游者!
+				</h1>
+				</br>
+				<p>
+					<span class="RichText ztext CopyrightRichText-richText css-hnrfcf"></span>
+				</p>
+				<p>
+					电影作为传播媒介的新形式出现在19世纪末，在为更广泛的大众消费者提供更丰富的故事、音乐、戏剧、幽默方面，电影是一场技术性的革命。
+				</p>
+				<p>
+					作为一种大众传播媒介，<strong>电影一定程度上可以满足人们既经济有又高雅的休闲方式，它让每一个普通人都可以享受高层次文化。</strong>
+				</p>
+			</div>
+			<table class="table">
+				<thead style="font-size: 25px;font-family: 楷体;">
+					<tr>
+						<th>
+							
+						</th>
+						<th>
+							每日资讯
+						</th>
+						<th>
+							每日排行
+						</th>
+						<th>
+							类型
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					{volist name="resultss" id="oneddy"}
+					<tr style="font-size: 25px;font-family: 楷体;">
+						<td>
+							{$oneddy->Id}
+						
+						</td>
+						<td>
+							<a href="#" style="color:#778899;">{$oneddy->title}</a>
+						
+						</td>
+						<td>
+							<a href="#" style="color:green;">{$oneddy->paihang}</a>
+						
+						</td>
+						<td>
+							<a href="#" style="color:pink;">{$oneddy->type}</a>
+						
+						</td>
+					</tr>
+					{/volist}
+				</tbody>
+			</table>
+		</div>
+  </div>
+<!--分页  -->
+<div id="pagination">
+	 {$resultss->render()} 
+</div>
+
+	
+<div class="row clearfix" style="font-size: 20px;">
+			<div class="col-md-4 column">
+				<ul style="width: 175px;float:left;">
+				  <li class="list-group-item list-group-item-success" style="font-size: 17px;">个人介绍</li>
+				<ul>
+				<p>
+					 <a class="btn" href="introduce">View details »</a>
+				</p>
+			</div>
+			<div class="col-md-4 column">
+				<ul style="width: 175px;margin:auto;">
+				  <li class="list-group-item list-group-item-warning" style="font-size: 17px;">个人爱好</li>
+				<ul>
+				<p>
+					 <a class="btn" href="hobby">View details »</a>
+				</p>
+			</div>
+			<div class="col-md-4 column">
+				<ul style="width: 175px;float:right;">
+				  <li class="list-group-item list-group-item-warning" style="font-size: 17px;">我的经历</li>
+				<ul>
+				
+				<p>
+					 <a class="btn" href="person">View details »</a>
+				</p>
+			</div>
+		</div>
+</div>
+</br>
+</br>
+
+
+
+<!-- 预告 -->
+<div  class="container-fluid" style="background-color: #000000;">
+<div class="container">
+     <h1 style="color: white; font-size: 30px;">即将上线</h1></br>
+     <!-- 横线 -->
+     <div class="header" >
+       <span class="line"></span>
+       <span class="text" style="font-size: 20px;font-family: 楷体;color: white;">2021-10-03</span>
+       <span class="line"></span>
+       <span class="text" style="font-size: 20px;font-family: 楷体;color: white;">2021-10-08</span>
+       <span class="line"></span>
+       <span class="text" style="font-size: 20px;font-family: 楷体;color: white;">09月18日上映</span>
+       <span class="line"></span>
+       <span class="text" style="font-size: 20px; font-family: 楷体;color: white;">即将上线</span>
+       <span class="line"></span>   
+       <span class="text" style="font-size: 20px;font-family: 楷体;color: white;">敬请期待</span>
+       <span class="line"></span>
+     </div >
+     <!-- 图片 -->
+     <div class="container">
+     <div class="img-content">
+      <div>
+        <a href=""><img src="__STATIC__/img/q1.jpg" class="di_2_tu">
+        </a>
+      </div>
+      <div >
+       <a href=""><img src="__STATIC__/img/q2.jpg" class="di_2_tu"></a>
+        
+      </div>
+      <div >	
+       <a href=""><img src="__STATIC__/img/q3.jpg" class="di_2_tu"></a>
+       
+      </div>
+      <div >	
+       <a href=""><img src="__STATIC__/img/q4.jpg" class="di_2_tu"></a>
+      
+      </div>
+      <div >	
+        <a href=""><img src="__STATIC__/img/q5.jpg" class="di_2_tu"></a>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+</div>
+</div>
+</div>
+<!-- 尾 -->
+<!-- <hr style="color: black;" /> -->
+<!-- 商品标识 -->
+<div class="shop-out" style="background-color: white;">
+  <div class="container" style="height: 275px;">
+        <div class="gth">
+          <div class="jingyu-tu">
+          <img src="__STATIC__/img/jingyu.png" style="width: 250px;height: 150px;">
+          </div>
+          <div class="font-link">
+          <p style="font-size: 20px;color: #666;"><b>热门频道</b></p>
+          <ul style="line-height: 35px;">
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">电视剧</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">NBA</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">娱乐</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">vip影院</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">新闻</a></li>
+          </ul>
+          <ul style="line-height: 35px;color: #666; margin-top: -173.33px;margin-left: 78px;">
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">综艺</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">搞笑</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">体育</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">海外剧</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">生活</a></li>
+          </ul>
+          <ul style="line-height: 35px;color: #666; margin-top: -173.33px;margin-left: 151px;">
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">电影</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">音乐</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">游戏</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">纪录片</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">动漫</a></li>
+          </ul>
+          </div>
+        </div>
+        <div class="auto-p" >
+          <a href="" style="text-decoration: none; color: black;"> 粤网文[2017]6138-1456号 | 网络视听许可证1904073号 </a></br>
+          <a href="" style="text-decoration: none; color: black;">关于鲸鱼电影网  | About Whale | 服务条款 | 广告服务 | 鲸鱼招聘 | 客服中心 | 网站导航 </a>
+          <div>
+         Copyright © 1998 - 2021 whale All Rights Reserved.</br>
+         版权鲸鱼所有
+          </div>
+        </div>
+        </br></br>
+        <div class="col-end">
+         <p style="font-size: 20px;color: #666;"><b>服务</b></p>
+          <ul style="line-height: 35px;">
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">客服</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">反馈</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">侵权投诉</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">免广告合作</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">VIP采购</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">隐私政策</a></li>
+            <li style="list-style: none;"><a href="" style="text-decoration: none; color: black;">隐私管理指引</a></li>
+          </ul>
+        </div>
+</div>
+</div>
+</br>
+</br>
+ <hr style="color: white;height: 10px;">
+</body>
+<script src="__STATIC__/js/jquery.min.js"></script>
+<script src="__STATIC__/js/film.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
